@@ -70,7 +70,7 @@ static int hello_open(struct inode *inodep, struct file *filep){
 module_init(hello_init);
 module_exit(hello_exit);
 
-//Results from log:
+//Results from log - main.cpp inside Part3 folder is the application calling this driver, yielding this result.
 
 // Oct  8 17:17:09 heidar kernel: [ 3257.776959] hello: Device has been opened 21 time(s)
 // Oct  8 17:17:09 heidar kernel: [ 3257.777037] hello write: accepting 16 bytes from the user
