@@ -69,3 +69,36 @@ static int hello_open(struct inode *inodep, struct file *filep){
 
 module_init(hello_init);
 module_exit(hello_exit);
+
+//Results from log:
+
+// Oct  8 17:17:09 heidar kernel: [ 3257.776959] hello: Device has been opened 21 time(s)
+// Oct  8 17:17:09 heidar kernel: [ 3257.777037] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:09 heidar kernel: [ 3257.777083] hello: Device successfully closed
+// Oct  8 17:17:10 heidar kernel: [ 3258.777456] hello: Device has been opened 22 time(s)
+// Oct  8 17:17:10 heidar kernel: [ 3258.777508] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:10 heidar kernel: [ 3258.777542] hello: Device successfully closed
+// Oct  8 17:17:11 heidar kernel: [ 3259.777784] hello: Device has been opened 23 time(s)
+// Oct  8 17:17:11 heidar kernel: [ 3259.777836] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:11 heidar kernel: [ 3259.777871] hello: Device successfully closed
+// Oct  8 17:17:12 heidar kernel: [ 3260.778126] hello: Device has been opened 24 time(s)
+// Oct  8 17:17:12 heidar kernel: [ 3260.778179] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:12 heidar kernel: [ 3260.778212] hello: Device successfully closed
+// Oct  8 17:17:13 heidar kernel: [ 3261.778467] hello: Device has been opened 25 time(s)
+// Oct  8 17:17:13 heidar kernel: [ 3261.778518] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:13 heidar kernel: [ 3261.778553] hello: Device successfully closed
+// Oct  8 17:17:14 heidar kernel: [ 3262.778805] hello: Device has been opened 26 time(s)
+// Oct  8 17:17:14 heidar kernel: [ 3262.778856] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:14 heidar kernel: [ 3262.778890] hello: Device successfully closed
+// Oct  8 17:17:15 heidar kernel: [ 3263.779138] hello: Device has been opened 27 time(s)
+// Oct  8 17:17:15 heidar kernel: [ 3263.779277] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:15 heidar kernel: [ 3263.779312] hello: Device successfully closed
+// Oct  8 17:17:16 heidar kernel: [ 3264.779566] hello: Device has been opened 28 time(s)
+// Oct  8 17:17:16 heidar kernel: [ 3264.779618] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:16 heidar kernel: [ 3264.779654] hello: Device successfully closed
+// Oct  8 17:17:17 heidar kernel: [ 3265.779908] hello: Device has been opened 29 time(s)
+// Oct  8 17:17:17 heidar kernel: [ 3265.779961] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:17 heidar kernel: [ 3265.779995] hello: Device successfully closed
+// Oct  8 17:17:18 heidar kernel: [ 3266.780247] hello: Device has been opened 30 time(s)
+// Oct  8 17:17:18 heidar kernel: [ 3266.780299] hello write: accepting 16 bytes from the user
+// Oct  8 17:17:18 heidar kernel: [ 3266.780333] hello: Device successfully closed
